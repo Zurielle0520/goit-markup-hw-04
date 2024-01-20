@@ -15,6 +15,9 @@
   --raleway: 'Raleway', sans-serif;
   --roboto: 'Roboto', sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 
 /*DEFAULT*/
 body {
@@ -45,6 +48,9 @@ img {
 
 .div-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .container {
@@ -116,6 +122,8 @@ img {
 
 /*SECTION-1*/
 .hero {
+  display: flex;
+  justify-content: center;
   background-color: var(--navy-blue);
   padding: 188px 0 188px;
   background-image: linear-gradient(
@@ -123,20 +131,20 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office\ 1.jpg);
-  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   align-items: center;
+  text-align: center;
 }
 
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  align-items: center;
   letter-spacing: 0.02em;
   color: var(--white);
-  max-width: 496px;
 }
 
 .button {
@@ -148,7 +156,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  display: block;
   min-width: 169px;
   height: 56px;
   border: none;
@@ -163,6 +170,16 @@ img {
 /*SECTION-2*/
 .section-two {
   padding: 120px 0 120px;
+}
+
+.icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -197,9 +214,9 @@ img {
 
 .features-paragraph {
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .information {
@@ -242,6 +259,7 @@ img {
 .team {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .team-list {
@@ -250,6 +268,8 @@ img {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .our-team {
@@ -326,14 +346,14 @@ img {
 }
 
 .portfolio-lists-two {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
 }
 
 .portfolio-list {
-  flex-basis: calc((100% - 48px) / 3);
+  flex: 1;
+  max-width: 360px;
 }
 
 .app {
