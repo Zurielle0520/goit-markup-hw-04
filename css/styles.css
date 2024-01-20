@@ -136,6 +136,7 @@ img {
   background-size: cover;
   align-items: center;
   text-align: center;
+  max-width: 1440px;
 }
 
 .hero-title {
