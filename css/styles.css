@@ -310,7 +310,7 @@ img {
 .social-media-link {
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: var(--iris);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -323,7 +323,28 @@ img {
 
 .social-media-link:hover,
 .social-media-link:focus {
-  background-color: #404bbf;
+  background-color: var(--ocean);
+}
+
+/* SECTION-5 */
+.section-five {
+  padding: 120px 0;
+}
+
+.customer-title {
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--gray);
+}
+
+.customer-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customer-icon {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
 }
 
 /*FOOTER*/
@@ -403,4 +424,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  margin-bottom: 72px;
 }
