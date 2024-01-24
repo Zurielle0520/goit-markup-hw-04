@@ -95,6 +95,7 @@ img {
 .list {
   list-style-type: none;
   display: flex;
+  padding-left: 15px;
 }
 
 .menu:hover,
@@ -335,6 +336,8 @@ img {
   font-size: 36px;
   line-height: 1.11;
   color: var(--gray);
+  margin-bottom: 72px;
+  text-align: center;
 }
 
 .customer-list {
@@ -353,6 +356,15 @@ img {
   padding: 100px 0 100px;
 }
 
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-footer {
+  margin-right: 120px;
+}
+
 .footer-link {
   display: inline-block;
   margin-bottom: 16px;
@@ -367,6 +379,15 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.socmed-footer-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
 }
 
 /* PORTFOLIO */
