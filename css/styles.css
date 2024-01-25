@@ -481,12 +481,12 @@ img {
   /* grid-template-columns: repeat(3, 1fr); */
 }
 
-.portfolio-list-2-link {
+.portfolio-list-two-link {
   display: block;
 }
 
-.portfolio-list-2-link:hover,
-.portfolio-list-2-link:focus {
+.portfolio-list-two-link:hover,
+.portfolio-list-two-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
