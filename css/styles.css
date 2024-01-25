@@ -350,6 +350,27 @@ img {
   height: 88px;
 }
 
+.customer-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-slate);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  color: var(--ocean);
+  border-color: var(--ocean);
+}
+
+.customer-svg {
+  fill: currentColor;
+}
+
 /*FOOTER*/
 .footer {
   background-color: var(--navy-blue);
