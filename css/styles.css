@@ -291,6 +291,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 16px;
 }
 
 .employee {
@@ -473,9 +474,21 @@ img {
 }
 
 .portfolio-lists-two {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
+
+.portfolio-list-2-link {
+  display: block;
+}
+
+.portfolio-list-2-link:hover,
+.portfolio-list-2-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list {
@@ -491,6 +504,7 @@ img {
 
 .portfolio-link {
   margin-bottom: 8px;
+  font-size: 20px;
 }
 
 .portfolio-paragraph {
