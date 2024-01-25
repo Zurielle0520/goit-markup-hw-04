@@ -400,7 +400,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-bottom: 16px;
 }
 
 .socmed-footer-paragraph {
@@ -409,6 +408,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white);
+  margin-bottom: 16px;
 }
 
 .socmed-footer-list {
@@ -433,7 +433,7 @@ img {
 
 .socmed-footer-link:hover,
 .socmed-footer-link:focus {
-  background-color: var(#31d0aa);
+  background-color: var(--green);
 }
 
 .footer-svg {
